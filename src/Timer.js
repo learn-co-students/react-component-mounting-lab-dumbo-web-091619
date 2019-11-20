@@ -8,8 +8,19 @@ class Timer extends Component {
   }
 
   // add your code here
+  componentDidMount(){
+    this.interval = setInterval(this.increaseSeconds, 1000)
+  }
 
+  increaseSeconds = () => {
+    this.setState({
+      time: this.state.time + 1
+    })
+  }
 
+  componentWillUnmount(){
+    clearInterval(this.interval)
+  }
 
 
 
