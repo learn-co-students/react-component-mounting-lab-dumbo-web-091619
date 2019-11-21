@@ -40,8 +40,7 @@ common pattern. Using `componentDidMount` is instead reserved for taking initial
 actions within an app. Actions might include getting remote API data, setting
 cursor focus, or creating an interval or timeout.
 
-The App component is keeping track of timers using an array of random ID
-numbers. This allows for easy removal and addition of Timer components.
+The App component is keeping track of timers using an array of random ID numbers. This allows for easy removal and addition of Timer components.
 
 In App, write a `componentDidMount` method that invokes the existing
 `handleAddTimer` class method.
